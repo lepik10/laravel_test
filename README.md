@@ -1,5 +1,12 @@
 <h2>Тестовое задание на Laravel</h2>
 
+<p>После клонирования сайта выполнить команды:<br>
+composer install<br>
+npm install<br>
+npm run build<br>
+php artisan migrate - после указания настроек БД в .env
+</p>
+
 <p><b>Основные команды</b></p>
 <p>После миграции можно запустить seeder коммандой:<br>
 php artisan db:seed<br>
