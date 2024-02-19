@@ -6,7 +6,7 @@ use App\Helpers\PriceHelper;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserBalanсe extends Model
+class UserBalance extends Model
 {
     use HasFactory;
 

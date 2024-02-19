@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\UserBalanсe;
+use App\Models\UserBalance;
 use App\Services\Interfaces\UserBalanceInterface;
 
 class UserBalanceService implements UserBalanceInterface
@@ -10,20 +10,20 @@ class UserBalanceService implements UserBalanceInterface
     /**
      * Создаем новый баланс у пользователя
      * @param array $info
-     * @return UserBalanсe|null
+     * @return UserBalance|null
      */
-    public function create(array $info): ?UserBalanсe
+    public function create(array $info): ?UserBalance
     {
-        return UserBalanсe::create($info);
+        return UserBalance::create($info);
     }
 
     /**
      * Получаем баланс по id пользователя
      * @param int $id
-     * @return UserBalanсe|null
+     * @return UserBalance|null
      */
-    public function getBalanceByUserId(int $user_id): ?UserBalanсe
+    public function getBalanceByUserId(int $user_id): ?UserBalance
     {
-        return UserBalanсe::where('user_id', $user_id)->first();
+        return UserBalance::where('user_id', $user_id)->first();
     }
 }

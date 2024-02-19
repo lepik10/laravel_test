@@ -33,10 +33,5 @@ class DatabaseSeeder extends Seeder
             ->create([
                 'user_id' => $user->id
             ]);
-
-        \App\Models\UserBalanсe::factory()->create([
-            'user_id' => $user->id,
-            'amount' => $amount_total
-        ]);
     }
 }

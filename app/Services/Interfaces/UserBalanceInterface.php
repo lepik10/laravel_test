@@ -2,21 +2,21 @@
 
 namespace App\Services\Interfaces;
 
-use App\Models\UserBalanсe;
+use App\Models\UserBalance;
 
 interface UserBalanceInterface
 {
     /**
      * Создаем новый баланс у пользователя
      * @param array $info
-     * @return UserBalanсe|null
+     * @return UserBalance|null
      */
-    public function create(array $info): ?UserBalanсe;
+    public function create(array $info): ?UserBalance;
 
     /**
      * Получаем баланс по id пользователя
      * @param int $id
-     * @return UserBalanсe|null
+     * @return UserBalance|null
      */
-    public function getBalanceByUserId(int $user_id): ?UserBalanсe;
+    public function getBalanceByUserId(int $user_id): ?UserBalance;
 }

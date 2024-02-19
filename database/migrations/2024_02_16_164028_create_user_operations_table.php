@@ -17,6 +17,7 @@ return new class extends Migration
             $table->decimal('amount', 19,2);
             $table->string('description')->nullable()->index();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
